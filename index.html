@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0d2331">
+    <link rel="stylesheet" href="style.css">
+    <title>Atmos Weather</title>
+</head>
+<body>
+    <main class="app-shell">
+        <header class="topbar"><a class="brand" href="#" aria-label="Atmos home"><span class="brand-mark">◒</span><span>atmos</span></a><p class="date-label" id="todayLabel">YOUR DAILY SKY REPORT</p></header>
+        <section class="search-section" aria-labelledby="pageTitle"><div><p class="eyebrow">LIVE CONDITIONS</p><h1 id="pageTitle">Find your <em>weather.</em></h1></div><form class="search-form" id="searchForm"><label class="sr-only" for="cityInput">Search for a city</label><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="cityInput" placeholder="Search a city..." autocomplete="off"><button id="searchBtn" type="submit">Search <span aria-hidden="true">↗</span></button></form></section>
+        <section class="weather-layout" id="weatherInfo" aria-live="polite">
+            <article class="current-card"><div class="current-topline"><div><p class="eyebrow">CURRENT WEATHER</p><h2 id="cityName">New York</h2><p class="muted" id="locationDetail">New York, United States</p></div><span class="condition-icon" id="weatherIcon" aria-hidden="true">☀</span></div><div class="temperature-row"><strong id="temperature">23°</strong><div><p id="description">Clear sky</p><p class="muted">Feels like <span id="feelsLike">23°</span></p></div></div><div class="stats-grid"><div><span>WIND</span><strong id="wind">12 km/h</strong></div><div><span>HUMIDITY</span><strong id="humidity">48%</strong></div><div><span>VISIBILITY</span><strong id="visibility">10 km</strong></div></div></article>
+            <aside class="forecast-panel"><div class="panel-heading"><div><p class="eyebrow">NEXT 5 DAYS</p><h2>Forecast</h2></div><span class="unit-pill">°C</span></div><div class="forecast-list" id="forecastList"></div></aside>
+        </section>
+        <p class="status-message" id="statusMessage" role="status"></p><footer><span>Powered by Open-Meteo</span><span id="updatedLabel">Updated just now</span></footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
