@@ -17,7 +17,7 @@ Search any city and get real-time current conditions plus a 5-day forecast, powe
 
 ## Demo
 
-[Live Demo](https://your-username.github.io/weather-app) <!-- replace with your link -->
+[Live Demo](https://github.com/zerodevsops-svg/weather-app) 
 
 ![Weather App Screenshot](./weather.png)
 
